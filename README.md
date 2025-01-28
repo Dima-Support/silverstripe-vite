@@ -2,10 +2,18 @@
 
 this package is a fork of original: passchn/silverstripe-vite.
 note this package may undergo some development overtime so be sure you lock to the version that works in your application.
+This package is compatible with both nginx and appache servers out of the box.
+
+For local development be sure to run `npm run watch` in the `themes/template` folder. if using homestead **install npm and run watch from your windows machine** to generate correct symlinks and add ability to watch file changes.
+To thus far no option for `npm run dev` on homestead, might work on Xamp or Mamp but not tried yet.
+
+For feature requests drop a PR or send a message.
+Enjoy :)
+
 ## Silverstripe Version support
 
-* `^0.x` supports Silverstripe 4.x
-* `dev-master` supports Silverstripe 5.x. Note: No stable release available yet, see https://github.com/brandcom/silverstripe-vite/issues/3 
+* `^1.0` supports Silverstripe 4.x
+* `^1.0.1` supports Silverstripe 5.x.
 
 ## Installation
 
