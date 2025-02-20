@@ -185,6 +185,14 @@ class ViteHelper extends ViewableData
         ]);
     }
 
+    public function replace_str($search, $replace, $subject) {
+        $pos = strpos($subject, $search);
+        if ($pos !== false) {
+            $subject = substr_replace($subject, $replace, $pos, strlen($search));
+        }
+        return $subject;
+    }
+
     /**
      * Get data on the files created by ViteJS
      * from /public/manifest.json
@@ -193,8 +201,8 @@ class ViteHelper extends ViewableData
     {
         $root = $_SERVER['DOCUMENT_ROOT'] ?? '';
         
-        if (!str_contains($root, "public_html")){
-            $root = str_replace('public', '', $root);
+        if (!strpos($root, 'public_html')){
+            $root = $this->replace_str('public', '', $root);
         }
 
         $root = rtrim($root, '/');
@@ -219,9 +227,7 @@ class ViteHelper extends ViewableData
             throw new \Exception('No ViteDataExtension manifest.json found. ');
         }
 
-        $manifest = str_replace([
-            "\u0000",
-        ], '', $manifest);
+        $manifest = $this->replace_str("\u0000", '', $manifest);
 
         return json_decode($manifest);
     }
