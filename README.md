@@ -37,9 +37,9 @@ You can override the default config in your `mysite.yml`:
 ```
 ViteHelper\Vite\ViteHelper:
   forceProductionMode: false
-  devHostNeedle: '.test'
+  devHostNeedle: '$_SERVER['HTTP_HOST']'
   devPort: 3000
-  jsSrcDirectory: 'public_src/'
+  jsSrcDirectory: '/public/_resources/themes/template/src/js/'
   mainJS: 'main.js'
   manifestDir: '/public/manifest.json'
 ```
