@@ -2,9 +2,9 @@
 
 namespace ViteHelper\Vite;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class ViteDataExtension extends DataExtension
+class ViteDataExtension extends Extension
 {
     public function getVite() : ViteHelper
     {
