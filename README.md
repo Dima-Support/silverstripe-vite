@@ -15,6 +15,7 @@ Enjoy :)
 * `0.0.5` supports Silverstripe 4.x | php 7.4
 * `^1.0` supports Silverstripe 4.x | php 8.1
 * `^1.0.1` supports Silverstripe 5.x. | php 8.1
+* `^1.0.2` supports Silverstripe 6.x. | ^php 8.3
 
 ## Installation
 
