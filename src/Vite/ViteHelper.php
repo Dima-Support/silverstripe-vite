@@ -3,7 +3,7 @@
 namespace ViteHelper\Vite;
 
 use SilverStripe\Core\Config\Configurable;
-use SilverStripe\View\ViewableData;
+use SilverStripe\Model\ModelData;
 
 /**
  * Usage:
@@ -27,7 +27,7 @@ use SilverStripe\View\ViewableData;
  * $Vite.CSS.RAW
  * $Vite.JS.RAW
  */
-class ViteHelper extends ViewableData
+class ViteHelper extends ModelData
 {
     use Configurable;
 
