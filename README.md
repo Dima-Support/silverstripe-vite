@@ -17,6 +17,7 @@ Enjoy :)
 * `^1.0.1` supports Silverstripe 5.x. | php 8.1
 * `^1.0.2` supports Silverstripe 6.x. | ^php 8.3
 * `^1.0.3` supports Silverstripe 6.x. | ^php 8.3 | changed dataExtension to Extension
+* `^1.0.4` supports Silverstripe 6.x. | ^php 8.3 | changed ViewableData to ModelData
 
 ## Installation
 
